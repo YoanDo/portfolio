@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700');
+
+$grey: #2C2C2C;
+$white: #DCDCDC;
+
+body {background-color:$grey}
+ul {list-style: none}
+
+nav {
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  z-index: 10;
+  bottom: 5%;
+  top: calc(50% + (239px / 2));
+  // margin-left: calc((100% / 12) - 12px);
+  margin-left: 2.6vw;
+}
+
+nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  // opacity: 0.1;
+  transition: all .5s cubic-bezier(.19, 1, .22, 1);
+  color: #161616; // TEST
+  & + li{
+    margin-left: 10px
+  }
+}
+
+li, h4 {
+  font-family: 'Open Sans';
+  font-size: 18px;
+}
+
+#header {
+  margin: 130px auto;
+  width: 75vw;
+  height: calc(100vh - 260px);
+  display: flex;
+  justify-content: flex-end;
+  // align-items: center;
+}
+
+#header {
+  h1 {
+    animation: 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 sline;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 50vh;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  h4 {
+    animation: 1600ms cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 my-name;
+    position: absolute;
+    top: 2.6vw;
+    left: 2.6vw;
+    color: $white;
+  }
+
+  .header-text {
+    color: $white;
+    background: url(./images/surf_pirate_eye.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes sline {
+  0% {
+    line-height: 5;
+  }
+  100% {
+    line-height: 1;
+  }
+}
+
+@keyframes my-name {
+  0% {
+    top: -5vh;
+  }
+  100% {
+    top: 2.6vh;
+  }
+}
