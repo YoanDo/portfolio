@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4f57e2b563a45f28e663",
-    "url": "/static/css/main.36bcc2a3.chunk.css"
+    "revision": "c8c2688a60a3b06fad5e",
+    "url": "/static/css/main.76b362d0.chunk.css"
   },
   {
-    "revision": "4f57e2b563a45f28e663",
-    "url": "/static/js/main.4f57e2b5.chunk.js"
+    "revision": "c8c2688a60a3b06fad5e",
+    "url": "/static/js/main.c8c2688a.chunk.js"
   },
   {
     "revision": "6caa67d51b5f64aeedac",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/static/media/surf_pirate_eye.6e238762.jpg"
   },
   {
-    "revision": "8266f152520f6869825010a68086c376",
+    "revision": "6d687c4f1729cbe51b8e7ad6b40aa265",
     "url": "/index.html"
   }
 ];
