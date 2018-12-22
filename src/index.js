@@ -9,8 +9,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { IntlProvider } from 'react-intl';
 import Index from './components/indexComponent';
-import messagesFr from './translations/fr';
-import messagesEn from './translations/en';
+import messagesFr from './assets/translations/fr';
+import messagesEn from './assets/translations/en';
 
 const messages = {
   fr: messagesFr,

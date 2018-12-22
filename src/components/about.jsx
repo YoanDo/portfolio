@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl';
 
 export default class About extends Component {
   constructor(props) {
@@ -10,7 +11,17 @@ export default class About extends Component {
   render() {
     return (
       <div id="about">
-        <p>yo bitches</p>
+        <p><FormattedMessage id="yoan" /></p>
+        <p><FormattedMessage id="stack" /></p>
+        <p>
+          <FormattedMessage id="background_wagon" />
+          <br />
+          <FormattedMessage id="background_istec" />
+          <br />
+          <FormattedMessage id="background_faap" />
+          <br />
+          <FormattedMessage id="background_ufv" />
+        </p>
       </div>
     );
   }
