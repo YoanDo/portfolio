@@ -1,9 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700');
+@font-face {font-family: 'SofiaProBlack';
+  src: url('./assets/fonts/SofiaProBlack.eot');
+  src: url('./assets/fonts/SofiaProBlack.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/SofiaProBlack.woff2') format('woff2'),
+  url('./assets/fonts/SofiaProBlack.woff') format('woff'),
+  url('./assets/fonts/SofiaProBlack.ttf') format('truetype');
+}
+// @font-face {font-family: 'SofiaProMedium';
+//   src: url('./assets/fonts/SofiaProMedium.eot');
+//   src: url('./assets/fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
+//   url('./assets/fonts/SofiaProMedium.woff') format('woff'),
+//   url('./assets/fonts/SofiaProMedium.ttf') format('truetype');
+// }
+@font-face {font-family: 'SofiaProLight';
+  src: url('./assets/fonts/SofiaProLight.eot');
+  src: url('./assets/fonts/SofiaProLight.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/SofiaProLight.woff') format('woff'),
+  url('./assets/fonts/SofiaProLight.ttf') format('truetype');
+}
+
 
 $grey: #2C2C2C;
 $white: #DCDCDC;
 
-body {background-color:$grey}
+body {
+  background-color:$grey;
+  font-family: 'SofiaProLight'
+}
 ul {list-style: none}
 
 nav {
@@ -21,7 +44,6 @@ nav {
   z-index: 10;
   bottom: 5%;
   top: calc(50% + (239px / 2));
-  // margin-left: calc((100% / 12) - 12px);
   margin-left: 2.6vw;
 }
 
@@ -37,17 +59,16 @@ nav ul li {
 }
 
 li, h4 {
-  font-family: 'Open Sans';
+  font-family: 'SofiaProLight','Open Sans';
   font-size: 18px;
 }
 
 #header {
   margin: 130px auto;
-  width: 75vw;
+  width: 82vw;
   height: calc(100vh - 260px);
   display: flex;
   justify-content: flex-end;
-  // align-items: center;
 }
 
 #header {
@@ -56,23 +77,23 @@ li, h4 {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    line-height: 1;
     font-size: 50vh;
     text-align: right;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'SofiaProBlack','Oswald', sans-serif;
+    line-height: 1.5;
   }
 
   h4 {
     animation: 1600ms cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 my-name;
     position: absolute;
-    top: 2.6vw;
     left: 2.6vw;
+    top: 2.6vh;
     color: $white;
   }
 
   .header-text {
     color: $white;
-    background: url(./images/surf_pirate_eye.jpg) no-repeat center;
+    background: url(./assets/images/surf_pirate_eye.jpg) no-repeat center;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -86,7 +107,7 @@ li, h4 {
     line-height: 5;
   }
   100% {
-    line-height: 1;
+    line-height: 1.5;
   }
 }
 
