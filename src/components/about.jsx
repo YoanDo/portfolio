@@ -11,6 +11,7 @@ export default class About extends Component {
   render() {
     return (
       <div id="about">
+        <h3><FormattedMessage id="hello" /></h3>
         <p><FormattedMessage id="yoan" /></p>
         <p><FormattedMessage id="stack" /></p>
         <p>
