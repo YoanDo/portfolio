@@ -5,6 +5,7 @@ import localeFr from 'react-intl/locale-data/fr';
 import Header from './header';
 import Nav from './nav';
 import About from './about';
+import Work from './work';
 
 addLocaleData([...localeEn, ...localeFr]);
 
@@ -28,6 +29,7 @@ export default class Index extends Component {
         <Nav activeSection={activeSection} />
         <Header changeSection={this.changeSection} />
         <About changeSection={this.changeSection} />
+        <Work changeSection={this.changeSection} />
       </Fragment>
     );
   }

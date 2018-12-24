@@ -2,8 +2,9 @@
   "about": "About",
   "work": "Work",
   "contact": "Contact",
-  "yoan": "Bonjour, I’m Yoan, passionate Frontend developer. Always looking for new designs, fonts, colors, photos, I love to make nice things work.  Graduated from a business school with a specialization in Luxury marketing, I worked as Project Manager for a few years until I realize that I was missing DOING stuff.  After a revealing bootcamp, I start working at Happydemics in 2017 where my work is focused on the interaction with the user.",
-  "stack": "Stack: JS, ReactJs, CSS, SCSS, HTML, Ruby, Rails",
+  "hello": "Bonjour",
+  "yoan": "I’m Yoan, passionate Frontend developer. Always looking for new designs, fonts, colors, photos, I love to make nice things work.  Graduated from a business school with a specialization in Luxury marketing, I worked as Project Manager for a few years until I realize that I was missing DOING stuff.  After a revealing bootcamp, I start working at Happydemics in 2017 where my job is focused on the interaction with the user.",
+  "stack": "Stack: JS, ReactJs, Redux, CSS, SCSS, HTML, Ruby, Rails",
   "background_wagon": "Le Wagon 2017 (Paris) - Coding Bootcamp",
   "background_istec": "ISTEC 2014 (Paris) - Business & Marketing ",
   "background_faap": " FAAP 2013 (Sao Paulo) - Art Direction, Typography, History of art ",

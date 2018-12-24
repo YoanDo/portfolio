@@ -23,7 +23,7 @@ export default class Header extends Component {
         onChange={this.onChange}
       >
         <div id="header">
-          <h4>Yoan Dorny.</h4>
+          <h5>Yoan Dorny.</h5>
           <Parallax
             offsetXMax={100}
             offsetXMin={-100}
