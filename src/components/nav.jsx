@@ -4,7 +4,11 @@ import { FormattedMessage } from 'react-intl';
 export default class Nav extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+    };
+  }
+  componentDidUpdate(){
+    console.log('nav', this.props.activeSection)
   }
 
   render() {
@@ -13,7 +17,7 @@ export default class Nav extends Component {
         <ul>
           <li><FormattedMessage id="contact" /></li>
           <li><FormattedMessage id="work" /></li>
-          <li><FormattedMessage id="about" /></li>
+          <li><a href="#about"><FormattedMessage id="about" /></a></li>
         </ul>
       </nav>
     );
