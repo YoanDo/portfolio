@@ -7,17 +7,17 @@ export default class Nav extends Component {
     this.state = {
     };
   }
-  componentDidUpdate(){
-    console.log('nav', this.props.activeSection)
-  }
 
   render() {
+    const { activeSection } = this.props;
     return (
       <nav>
         <ul>
           <li><FormattedMessage id="contact" /></li>
           <li><FormattedMessage id="work" /></li>
-          <li><a href="#about"><FormattedMessage id="about" /></a></li>
+          <li className={(activeSection === 'about' ? 'active' : null)}>
+            <a href="#about"><FormattedMessage id="about" /></a>
+          </li>
         </ul>
       </nav>
     );

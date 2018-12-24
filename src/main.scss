@@ -25,7 +25,9 @@ $white: #DCDCDC;
 
 body {
   background-color:$grey;
-  font-family: 'SofiaProLight'
+  font-family: 'SofiaProLight';
+// TO REMOVE 🚨
+  height: 800vh;
 }
 ul {list-style: none}
 
@@ -51,16 +53,52 @@ nav ul li {
   display: inline-block;
   vertical-align: middle;
   // opacity: 0.1;
+  position: relative;
   transition: all .5s cubic-bezier(.19, 1, .22, 1);
   color: #161616; // TEST
   & + li{
     margin-left: 10px
   }
+  &:after{
+    width: 0px;
+    position: absolute;
+  }
+  &.active{
+    width: 60px;
+    transition: 2s ease-in-out;
+    background-color: white;
+      &:after{
+        width: 100%;
+        position: absolute;
+      }
+  }
+}
+
+h1,h3{
+  font-family: 'SofiaProBlack','Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 48px;
 }
 
 li, h4 {
   font-family: 'SofiaProLight','Open Sans';
   font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p{
+  margin-top: 0;
+  font-size: 16px;
+  & + p{
+    margin-top: 16px;
+  }
 }
 
 #header,#about {
@@ -76,10 +114,8 @@ li, h4 {
     animation: 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 sline;
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
     font-size: 50vh;
     text-align: right;
-    font-family: 'SofiaProBlack','Oswald', sans-serif;
     line-height: 1.5;
   }
 
@@ -108,7 +144,7 @@ li, h4 {
   color: $white;
   line-height: 1.5;
   letter-spacing: 1.6px;
-  p{
+  h3,p{
     width:50vw
   }
 }
