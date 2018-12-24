@@ -13,8 +13,12 @@ export default class Nav extends Component {
     return (
       <nav>
         <ul>
-          <li><FormattedMessage id="contact" /></li>
-          <li><FormattedMessage id="work" /></li>
+          <li className={(activeSection === 'contact' ? 'active' : null)}>
+            <a href="#contact"><FormattedMessage id="contact" /></a>
+          </li>
+          <li className={(activeSection === 'work' ? 'active' : null)}>
+            <a href="#work"><FormattedMessage id="work" /></a>
+          </li>
           <li className={(activeSection === 'about' ? 'active' : null)}>
             <a href="#about"><FormattedMessage id="about" /></a>
           </li>
