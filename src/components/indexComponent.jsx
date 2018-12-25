@@ -6,6 +6,7 @@ import Header from './header';
 import Nav from './nav';
 import About from './about';
 import Work from './work';
+import Contact from './contact';
 
 addLocaleData([...localeEn, ...localeFr]);
 
@@ -30,6 +31,7 @@ export default class Index extends Component {
         <Header changeSection={this.changeSection} />
         <About changeSection={this.changeSection} />
         <Work changeSection={this.changeSection} />
+        <Contact changeSection={this.changeSection} />
       </Fragment>
     );
   }

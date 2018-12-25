@@ -135,13 +135,15 @@ p{
   }
 }
 
-#header,#about,#work {
-  margin: 130px auto;
+#header,#about,#work,#contact {
+  min-height: 30vh;
+  margin: 300px auto;
   width: 82vw;
   display: flex;
 }
 
 #header {
+  margin: 130px auto;
   height: calc(100vh - 260px);
   justify-content: flex-end;
   h1 {
@@ -187,7 +189,6 @@ p{
 #work{
   flex-direction: row;
   justify-content: flex-between;
-  min-height: 30vh;
   ul{margin-right: auto}
   li h4{
       position: relative;
@@ -252,6 +253,15 @@ p{
     }
     &.calypso{
       background-image: url(./assets/images/calypso_maassen.jpg);
+    }
+  }
+}
+
+#contact{
+  ul{
+    margin-top: 0;
+    li:first-of-type{
+      font-family: 'SofiaProBlack';
     }
   }
 }
