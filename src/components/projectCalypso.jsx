@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import VisibilitySensor from 'react-visibility-sensor';
 
-export default class ProjectHapp extends Component {
+export default class ProjectCalypso extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,7 +19,7 @@ export default class ProjectHapp extends Component {
 
   render() {
     const { visible } = this.state;
-    const link = 'https://happydemics.com';
+    const link = 'http://calypso.surf';
     return (
       <VisibilitySensor
         scrollCheck
@@ -27,17 +27,19 @@ export default class ProjectHapp extends Component {
       >
         <div className={`project ${visible ? 'active' : null}`}>
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <div className="project-illustration happydemics" />
+            <div className="project-illustration calypso" />
           </a>
           <div className="project-descr">
             <p>
-              <FormattedMessage id="happydemics_dates" />
+              <FormattedMessage id="calypso_dates" />
             </p>
             <a href={link}>
               <FormattedMessage id="discover" />
             </a>
+            <a href="https://youtu.be/EDdyiaX6bw0?t=650">
+              <FormattedMessage id="calypso_pitch" />
+            </a>
           </div>
-          {/* <p><FormattedMessage id="happydemics_comments" /></p> */}
         </div>
       </VisibilitySensor>
     );

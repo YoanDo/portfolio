@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import ProjectHapp from './projectHapp';
+import ProjectCalypso from './projectCalypso';
 
 export default class Work extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class Work extends Component {
       selection: 'happydemics',
     };
     this.onChange = this.onChange.bind(this);
-    this.updateSelection = this.updateSelection.bind(this)
+    this.updateSelection = this.updateSelection.bind(this);
   }
 
   onChange(isVisible) {
@@ -18,8 +19,8 @@ export default class Work extends Component {
   }
 
   updateSelection(choice) {
-    this.setState({ selection: choice })
-    console.log(choice)
+    this.setState({ selection: choice });
+    console.log(choice);
   }
 
   render() {
@@ -31,11 +32,12 @@ export default class Work extends Component {
           onChange={this.onChange}
         >
           <ul>
-            <li className={(selection === 'happydemics' ? 'active' : null)} onClick={ () => this.updateSelection('happydemics') }><h4>Happydemics</h4></li>
-            <li className={(selection === 'calypso' ? 'active' : null)} onClick={ () => this.updateSelection('calypso') }><h4>Calypso</h4></li>
+            <li className={(selection === 'happydemics' ? 'active' : null)} onClick={() => this.updateSelection('happydemics')}><h4>Happydemics</h4></li>
+            <li className={(selection === 'calypso' ? 'active' : null)} onClick={() => this.updateSelection('calypso')}><h4>Calypso</h4></li>
           </ul>
         </VisibilitySensor>
         {selection === 'happydemics' ? <ProjectHapp /> : null}
+        {selection === 'calypso' ? <ProjectCalypso /> : null}
       </div>
 
     );

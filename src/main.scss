@@ -229,6 +229,7 @@ p{
     }
   }
   .project-illustration{
+    margin-bottom: 16px;
     height: 200px;
     width: 0px;
     background-repeat:no-repeat;
@@ -245,6 +246,9 @@ p{
     }
     &.happydemics{
       background-image: url(./assets/images/happydemics.png);
+    }
+    &.calypso{
+      background-image: url(./assets/images/calypso_maassen.jpg);
     }
   }
 
