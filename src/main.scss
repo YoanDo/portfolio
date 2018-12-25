@@ -71,7 +71,6 @@ nav {
 nav ul li {
   display: inline-block;
   vertical-align: middle;
-  // opacity: 0.1;
   position: relative;
   transition: all .5s cubic-bezier(.19, 1, .22, 1);
   color: #161616; // TEST
@@ -189,6 +188,7 @@ p{
   flex-direction: row;
   justify-content: flex-between;
   min-height: 30vh;
+  ul{margin-right: auto}
   li h4{
       position: relative;
     &:after {
@@ -219,6 +219,9 @@ p{
       width: 100%;
     }
   }
+  .closing .project .project-illustration{
+    width: 0px;
+  }
   .project-descr{
     display: flex;
     a{
@@ -237,7 +240,7 @@ p{
     background-size: cover;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: 1s ease-in-out;
+    transition: .6s ease-in-out;
     cursor: pointer;
     &:hover{
       -webkit-filter: grayscale(0%);
@@ -251,7 +254,6 @@ p{
       background-image: url(./assets/images/calypso_maassen.jpg);
     }
   }
-
 }
 
 @keyframes sline {

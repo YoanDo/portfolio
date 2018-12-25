@@ -8,6 +8,7 @@ export default class Work extends Component {
     super(props);
     this.state = {
       selection: 'happydemics',
+      closing: false,
     };
     this.onChange = this.onChange.bind(this);
     this.updateSelection = this.updateSelection.bind(this);
@@ -19,12 +20,15 @@ export default class Work extends Component {
   }
 
   updateSelection(choice) {
-    this.setState({ selection: choice });
-    console.log(choice);
+    const { selection } = this.state
+    if (choice !== selection){
+      this.setState({ closing: true });
+      setTimeout(() => { this.setState({ selection: choice, closing: false }); }, 600);
+    }
   }
 
   render() {
-    const { selection } = this.state;
+    const { selection, closing } = this.state;
     return (
       <div id="work">
         <VisibilitySensor
@@ -32,12 +36,14 @@ export default class Work extends Component {
           onChange={this.onChange}
         >
           <ul>
-            <li className={(selection === 'happydemics' ? 'active' : null)} onClick={() => this.updateSelection('happydemics')}><h4>Happydemics</h4></li>
+            <li className={selection === 'happydemics' ? 'active ' : null} onClick={() => this.updateSelection('happydemics')}><h4>Happydemics</h4></li>
             <li className={(selection === 'calypso' ? 'active' : null)} onClick={() => this.updateSelection('calypso')}><h4>Calypso</h4></li>
           </ul>
         </VisibilitySensor>
-        {selection === 'happydemics' ? <ProjectHapp /> : null}
-        {selection === 'calypso' ? <ProjectCalypso /> : null}
+        <div className={(closing ? 'closing' : null)}>
+          {selection === 'happydemics' ? <ProjectHapp /> : null}
+          {selection === 'calypso' ? <ProjectCalypso /> : null}
+        </div>
       </div>
 
     );
