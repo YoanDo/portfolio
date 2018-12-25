@@ -33,7 +33,7 @@ export default class ProjectHapp extends Component {
             <p>
               <FormattedMessage id="happydemics_dates" />
             </p>
-            <a href={link}>
+            <a href={link} target="_blank" rel="noopener noreferrer">
               <FormattedMessage id="discover" />
             </a>
           </div>

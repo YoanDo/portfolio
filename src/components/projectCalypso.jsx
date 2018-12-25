@@ -36,7 +36,7 @@ export default class ProjectCalypso extends Component {
             <a href={link}>
               <FormattedMessage id="discover" />
             </a>
-            <a href="https://youtu.be/EDdyiaX6bw0?t=650">
+            <a href="https://youtu.be/EDdyiaX6bw0?t=650" target="_blank" rel="noopener noreferrer">
               <FormattedMessage id="calypso_pitch" />
             </a>
           </div>
