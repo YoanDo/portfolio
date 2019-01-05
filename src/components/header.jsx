@@ -30,7 +30,7 @@ export default class Header extends Component {
             slowerScrollRate
           >
             <h1 className="header-text slideInUp desktop-only">
-              °/yo
+              °/ yo
             </h1>
           </Parallax>
           <h1 className="header-text slideInUp mobile-only">

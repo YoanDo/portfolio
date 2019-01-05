@@ -12,8 +12,12 @@ export default class ProjectCalypso extends Component {
   }
 
   onChange(isVisible) {
+    const { selection } = this.props;
     if (isVisible) {
       this.setState({ visible: isVisible });
+    }
+    if (selection !== 'calypso') {
+      this.setState({ visible: false });
     }
   }
 
@@ -26,7 +30,7 @@ export default class ProjectCalypso extends Component {
         scrollCheck
         onChange={this.onChange}
       >
-        <div className={`project ${visible ? 'active' : null}`} style={{ display: selection === 'calypso' ? 'block' : 'none' }}>
+        <div className={`project ${visible ? 'active' : ''} ${selection === 'calypso' ? 'selected' : ''}`}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <div className="project-illustration calypso" />
           </a>

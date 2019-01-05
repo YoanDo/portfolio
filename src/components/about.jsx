@@ -21,7 +21,7 @@ export default class About extends Component {
         scrollCheck
         onChange={this.onChange}
       >
-        <div id="about">
+        <div id="about" name="about">
           <h3><FormattedMessage id="hello" /></h3>
           <p><FormattedMessage id="yoan" /></p>
           <p><FormattedMessage id="stack" /></p>

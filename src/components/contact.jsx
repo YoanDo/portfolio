@@ -21,7 +21,7 @@ export default class Contact extends Component {
         scrollCheck
         onChange={this.onChange}
       >
-        <div id="contact">
+        <div id="contact" name="contact">
           <h3><FormattedMessage id="contact_me" /></h3>
           <ul className="social">
             <li>social</li>

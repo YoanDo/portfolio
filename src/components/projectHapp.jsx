@@ -12,8 +12,12 @@ export default class ProjectHapp extends Component {
   }
 
   onChange(isVisible) {
+    const { selection } = this.props;
     if (isVisible) {
       this.setState({ visible: isVisible });
+    }
+    if (selection !== 'happydemics') {
+      this.setState({ visible: false });
     }
   }
 
@@ -26,7 +30,7 @@ export default class ProjectHapp extends Component {
         scrollCheck
         onChange={this.onChange}
       >
-        <div className={`project ${visible ? 'active' : ''}`} style={{ display: selection === 'happydemics' ? 'block' : 'none' }}>
+        <div className={`project ${visible ? 'active' : ''} ${selection === 'happydemics' ? 'selected' : ''}`}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <div className="project-illustration happydemics" />
           </a>

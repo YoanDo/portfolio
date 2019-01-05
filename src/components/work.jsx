@@ -30,7 +30,7 @@ export default class Work extends Component {
   render() {
     const { selection, closing } = this.state;
     return (
-      <div id="work">
+      <div id="work" name="work">
         <VisibilitySensor
           scrollCheck
           onChange={this.onChange}
