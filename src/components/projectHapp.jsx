@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import VisibilitySensor from 'react-visibility-sensor';
+import classNames from 'classnames/bind';
+import styles from '../main.scss';
+
+let cx = classNames.bind(styles);
 
 export default class ProjectHapp extends Component {
   constructor(props) {
@@ -25,12 +29,17 @@ export default class ProjectHapp extends Component {
     const { visible } = this.state;
     const { selection } = this.props;
     const link = 'https://happydemics.com';
+    const projectClass = cx({
+      project: true,
+      active: visible,
+      selected: selection === 'happydemics',
+    });
     return (
       <VisibilitySensor
         scrollCheck
         onChange={this.onChange}
       >
-        <div className={`project ${visible ? 'active' : ''} ${selection === 'happydemics' ? 'selected' : ''}`}>
+        <div className={projectClass}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <div className="project-illustration happydemics" />
           </a>

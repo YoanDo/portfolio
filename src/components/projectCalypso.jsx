@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import VisibilitySensor from 'react-visibility-sensor';
+import classNames from 'classnames/bind';
+import styles from '../main.scss';
+
+let cx = classNames.bind(styles);
 
 export default class ProjectCalypso extends Component {
   constructor(props) {
@@ -25,12 +29,18 @@ export default class ProjectCalypso extends Component {
     const { visible } = this.state;
     const { selection } = this.props;
     const link = 'http://calypso.surf';
+    const projectClass = cx({
+      project: true,
+      active: visible,
+      selected: selection === 'calypso',
+    });
+
     return (
       <VisibilitySensor
         scrollCheck
         onChange={this.onChange}
       >
-        <div className={`project ${visible ? 'active' : ''} ${selection === 'calypso' ? 'selected' : ''}`}>
+        <div className={projectClass}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <div className="project-illustration calypso" />
           </a>
