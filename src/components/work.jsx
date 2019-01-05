@@ -20,8 +20,8 @@ export default class Work extends Component {
   }
 
   updateSelection(choice) {
-    const { selection } = this.state
-    if (choice !== selection){
+    const { selection } = this.state;
+    if (choice !== selection) {
       this.setState({ closing: true });
       setTimeout(() => { this.setState({ selection: choice, closing: false }); }, 600);
     }
@@ -40,12 +40,11 @@ export default class Work extends Component {
             <li className={(selection === 'calypso' ? 'active' : null)} onClick={() => this.updateSelection('calypso')}><h4>Calypso</h4></li>
           </ul>
         </VisibilitySensor>
-        <div className={(closing ? 'closing' : null)}>
-          {selection === 'happydemics' ? <ProjectHapp /> : null}
-          {selection === 'calypso' ? <ProjectCalypso /> : null}
+        <div className={'projects ' + (closing ? 'closing' : '')}>
+          <ProjectHapp selection={selection} />
+          <ProjectCalypso selection={selection} />
         </div>
       </div>
-
     );
   }
 }

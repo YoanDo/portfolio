@@ -19,13 +19,14 @@ export default class ProjectHapp extends Component {
 
   render() {
     const { visible } = this.state;
+    const { selection } = this.props;
     const link = 'https://happydemics.com';
     return (
       <VisibilitySensor
         scrollCheck
         onChange={this.onChange}
       >
-        <div className={`project ${visible ? 'active' : null}`}>
+        <div className={`project ${visible ? 'active' : ''}`} style={{ display: selection === 'happydemics' ? 'block' : 'none' }}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <div className="project-illustration happydemics" />
           </a>

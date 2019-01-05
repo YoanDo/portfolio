@@ -19,13 +19,14 @@ export default class ProjectCalypso extends Component {
 
   render() {
     const { visible } = this.state;
+    const { selection } = this.props;
     const link = 'http://calypso.surf';
     return (
       <VisibilitySensor
         scrollCheck
         onChange={this.onChange}
       >
-        <div className={`project ${visible ? 'active' : null}`}>
+        <div className={`project ${visible ? 'active' : null}`} style={{ display: selection === 'calypso' ? 'block' : 'none' }}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <div className="project-illustration calypso" />
           </a>
