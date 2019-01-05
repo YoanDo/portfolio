@@ -6,12 +6,7 @@
   url('./assets/fonts/SofiaProBlack.woff') format('woff'),
   url('./assets/fonts/SofiaProBlack.ttf') format('truetype');
 }
-// @font-face {font-family: 'SofiaProMedium';
-//   src: url('./assets/fonts/SofiaProMedium.eot');
-//   src: url('./assets/fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
-//   url('./assets/fonts/SofiaProMedium.woff') format('woff'),
-//   url('./assets/fonts/SofiaProMedium.ttf') format('truetype');
-// }
+
 @font-face {font-family: 'SofiaProLight';
   src: url('./assets/fonts/SofiaProLight.eot');
   src: url('./assets/fonts/SofiaProLight.eot?#iefix') format('embedded-opentype'),
@@ -22,6 +17,12 @@
 
 $grey: #2C2C2C;
 $white: #DCDCDC;
+$black: #161616;
+
+$xl-fsize: 50vh;
+$l-fsize: 48px;
+$m-fsize: 18px;
+$s-fsize: 16px;
 
 ::selection {
   background: $white;
@@ -73,7 +74,7 @@ nav ul li {
   vertical-align: middle;
   position: relative;
   transition: all .5s cubic-bezier(.19, 1, .22, 1);
-  color: #161616; // TEST
+  color: $black;
   & + li{
     margin-left: 10px
   }
@@ -102,14 +103,15 @@ h1,h3{
   text-transform: uppercase;
 }
 
+h3, h4 {
+  font-size: $l-fsize;
+}
 h3{
   margin-top:0;
-  font-size: 48px;
 }
 
 h4 {
-  font-size: 'SofiaProLight','Open Sans';
-  font-size: 48px;
+  font-family: 'SofiaProLight','Open Sans';
   line-height: 1;
   margin: 0;
 }
@@ -129,9 +131,9 @@ a {
 
 p{
   margin-top: 0;
-  font-size: 16px;
+  font-size: $s-fsize;
   & + p{
-    margin-top: 16px;
+    margin-top: $s-fsize;
   }
 }
 
@@ -150,7 +152,7 @@ p{
     animation: 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 sline;
     margin: 0;
     padding: 0;
-    font-size: 50vh;
+    font-size: $xl-fsize;
     text-align: right;
     line-height: 1.5;
   }
@@ -235,7 +237,7 @@ p{
     }
   }
   .project-illustration{
-    margin-bottom: 16px;
+    margin-bottom: $s-fsize;
     height: 200px;
     width: 0px;
     background-repeat:no-repeat;
@@ -282,8 +284,11 @@ p{
     display: none;
   }
 
-  #about,#work,#contact {
+  #header,#about,#work,#contact {
     width: 80vw;
+  }
+
+  #about,#work,#contact {
     align-items: flex-start;
     flex-direction: column;
     h3, p{
@@ -301,7 +306,6 @@ p{
 
   #header {
     margin: 0 auto;
-    width: 80vw;
     height: 600px;
     align-items: center;
     justify-content: center;

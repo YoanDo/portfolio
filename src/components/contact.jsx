@@ -22,7 +22,7 @@ export default class Contact extends Component {
         onChange={this.onChange}
       >
         <div id="contact">
-        <h3><FormattedMessage id="contact_me" /></h3>
+          <h3><FormattedMessage id="contact_me" /></h3>
           <ul className="social">
             <li>social</li>
             <li><a href="mailto:y.n.dorny@gmail.com" rel="noopener noreferrer">mail</a></li>

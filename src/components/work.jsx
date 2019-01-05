@@ -40,7 +40,7 @@ export default class Work extends Component {
             <li className={(selection === 'calypso' ? 'active' : null)} onClick={() => this.updateSelection('calypso')}><h4>Calypso</h4></li>
           </ul>
         </VisibilitySensor>
-        <div className={'projects ' + (closing ? 'closing' : '')}>
+        <div className={`projects ${closing ? 'closing' : ''}`}>
           <ProjectHapp selection={selection} />
           <ProjectCalypso selection={selection} />
         </div>
