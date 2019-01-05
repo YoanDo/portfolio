@@ -268,20 +268,45 @@ p{
   }
 }
 
+.mobile-only{
+  display: none;
+}
+
 @media (max-width: 1100px){
-  h3{
+
+  h3 {
     font-size: 34px;
   }
 
-  nav{
+  nav {
     display: none;
   }
-  #header,#about,#work,#contact {
+
+  #about,#work,#contact {
     width: 80vw;
     align-items: flex-start;
     flex-direction: column;
     h3, p{
       width: 100%;
+    }
+  }
+
+  #about {
+    margin: 0px auto 150px;
+  }
+
+  #work,#contact {
+    margin: 150px auto;
+  }
+
+  #header {
+    margin: 0 auto;
+    width: 80vw;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    h1.mobile-only{
+      font-size: 200px;
     }
   }
 
@@ -302,6 +327,12 @@ p{
     ul{
       padding: 0;
     }
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
   }
 }
 
