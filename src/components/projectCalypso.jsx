@@ -4,7 +4,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 import classNames from 'classnames/bind';
 import styles from '../main.scss';
 
-let cx = classNames.bind(styles);
+const cx = classNames.bind(styles);
 
 export default class ProjectCalypso extends Component {
   constructor(props) {
