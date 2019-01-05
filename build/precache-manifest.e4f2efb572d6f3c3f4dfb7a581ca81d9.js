@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "26555384087094ebedfa",
-    "url": "/static/css/main.4d675123.chunk.css"
+    "revision": "7f41ebbb4d7b612f3d68",
+    "url": "/static/css/main.fde45707.chunk.css"
   },
   {
-    "revision": "26555384087094ebedfa",
-    "url": "/static/js/main.26555384.chunk.js"
+    "revision": "7f41ebbb4d7b612f3d68",
+    "url": "/static/js/main.7f41ebbb.chunk.js"
   },
   {
-    "revision": "21b839c824be41236094",
-    "url": "/static/js/1.21b839c8.chunk.js"
+    "revision": "cdd4d77cd21bad01c0ba",
+    "url": "/static/js/1.cdd4d77c.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/media/happydemics.14d46cda.png"
   },
   {
-    "revision": "322652a6866184a41f955164902436fc",
+    "revision": "2446038bc066e79ca2cfee16e675b785",
     "url": "/index.html"
   }
 ];
