@@ -25,9 +25,9 @@ export default class Contact extends Component {
         <h3><FormattedMessage id="contact_me" /></h3>
           <ul className="social">
             <li>social</li>
-            <li>mail</li>
-            <li>linkedin</li>
-            <li>Instagram</li>
+            <li><a href="mailto:y.n.dorny@gmail.com" rel="noopener noreferrer">mail</a></li>
+            <li><a href="https://www.linkedin.com/in/ydorny/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
+            <li><a href="https://www.instagram.com/yn_d/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           </ul>
         </div>
       </VisibilitySensor>
