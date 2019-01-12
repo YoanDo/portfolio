@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7f41ebbb4d7b612f3d68",
-    "url": "/static/css/main.fde45707.chunk.css"
+    "revision": "02a4147c1f8dceccea63",
+    "url": "/static/css/main.46f277ab.chunk.css"
   },
   {
-    "revision": "7f41ebbb4d7b612f3d68",
-    "url": "/static/js/main.7f41ebbb.chunk.js"
+    "revision": "02a4147c1f8dceccea63",
+    "url": "/static/js/main.02a4147c.chunk.js"
   },
   {
     "revision": "cdd4d77cd21bad01c0ba",
@@ -18,10 +18,6 @@ self.__precacheManifest = [
   {
     "revision": "f59aa03285e463f1b56a60278b33272f",
     "url": "/static/media/SofiaProLight.f59aa032.eot"
-  },
-  {
-    "revision": "1c4ada6972da5ac1ec51a027c0c94e7e",
-    "url": "/static/media/SofiaProLight.1c4ada69.woff"
   },
   {
     "revision": "db2e2680d5f507244442a7b361b04402",
@@ -40,6 +36,10 @@ self.__precacheManifest = [
     "url": "/static/media/SofiaProBlack.11dd2cda.woff"
   },
   {
+    "revision": "1c4ada6972da5ac1ec51a027c0c94e7e",
+    "url": "/static/media/SofiaProLight.1c4ada69.woff"
+  },
+  {
     "revision": "e26fb7bdb7262833175ba581dee19a75",
     "url": "/static/media/SofiaProBlack.e26fb7bd.ttf"
   },
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/media/happydemics.14d46cda.png"
   },
   {
-    "revision": "2446038bc066e79ca2cfee16e675b785",
+    "revision": "b0e3892252f04b103fb9a65cebce8382",
     "url": "/index.html"
   }
 ];
