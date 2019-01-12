@@ -15,9 +15,9 @@
 }
 
 
-$grey: #2C2C2C;
+$background: #14110F;
 $white: #DCDCDC;
-$black: #161616;
+$grey: #454545;
 
 $xl-fsize: 50vh;
 $l-fsize: 48px;
@@ -38,7 +38,7 @@ html{
 }
 
 body {
-  background-color:$grey;
+  background-color:$background;
   color: $white;
   font-family: 'SofiaProLight';
 }
@@ -64,7 +64,7 @@ nav {
   position: fixed;
   z-index: 10;
   bottom: 5%;
-  // top: calc(50% + (239px / 2));
+  top: calc(50% + (239px / 2));
   margin-left: 2.6vw;
   height: 40px;
 }
@@ -74,7 +74,7 @@ nav ul li {
   vertical-align: middle;
   position: relative;
   transition: all .5s cubic-bezier(.19, 1, .22, 1);
-  color: $black;
+  color: $grey;
   & + li{
     margin-left: 10px
   }
@@ -155,6 +155,8 @@ p {
     font-size: $xl-fsize;
     text-align: right;
     line-height: 1.5;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   h5 {

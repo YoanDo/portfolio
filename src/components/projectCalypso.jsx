@@ -48,7 +48,7 @@ export default class ProjectCalypso extends Component {
             <p>
               <FormattedMessage id="calypso_dates" />
             </p>
-            <a href={link}>
+            <a href={link} target="_blank" rel="noopener noreferrer">
               <FormattedMessage id="discover" />
             </a>
             <a href="https://youtu.be/EDdyiaX6bw0?t=650" target="_blank" rel="noopener noreferrer">
