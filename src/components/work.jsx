@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import ProjectHapp from './projectHapp';
 import ProjectCalypso from './projectCalypso';
+import ProjectCoach from './projectCoach';
 
 export default class Work extends Component {
   constructor(props) {
@@ -37,11 +38,13 @@ export default class Work extends Component {
         >
           <ul>
             <li className={selection === 'happydemics' ? 'active ' : null} onClick={() => this.updateSelection('happydemics')}><h4>Happydemics</h4></li>
+            <li className={(selection === 'coach' ? 'active' : null)} onClick={() => this.updateSelection('coach')}><h4>Redux Coach</h4></li>
             <li className={(selection === 'calypso' ? 'active' : null)} onClick={() => this.updateSelection('calypso')}><h4>Calypso</h4></li>
           </ul>
         </VisibilitySensor>
         <div className={`projects ${closing ? 'closing' : ''}`}>
           <ProjectHapp selection={selection} />
+          <ProjectCoach selection={selection} />
           <ProjectCalypso selection={selection} />
         </div>
       </div>
