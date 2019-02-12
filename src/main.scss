@@ -345,6 +345,10 @@ p {
       display: block;
       .project-illustration {
         width: 100%;
+        transition: .2s;
+      }
+      .project-illustration:hover{
+        background-position: center center;
       }
     }
   }
