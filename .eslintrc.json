@@ -108,7 +108,7 @@
       2,
       "single",
       {
-        "avoidEscape": true,
+        "avoidEscape": false,
         "allowTemplateLiterals": true
       }
     ],
